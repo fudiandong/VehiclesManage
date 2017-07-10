@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+
+		<style type="text/css">
+			.anniu14 {
+				width: 80%;
+				margin: 0 auto;
+				height: 42px;
+				font-size: 1em;
+			}
+		</style>
+	</head>
+
+	<body style="background-color: white;">
+		<div class="mui-content" style="background-color: white;">
+			<div align="center" style="padding-top: 20%;"><img src="logo_login.png" width="35%"></div>
+			<form id='login-form' style="width: 80%; margin: 0 auto;padding-top: 10%;">
+				<div class="mui-input-row">
+					<input id="username" type="text" class="mui-input-clear" placeholder="输入账号" style="height: 43px;">
+				</div>
+				<div class="mui-input-row mui-password">
+					<input id="password" type="password" class="mui-input-password" placeholder="输入密码" style="height: 43px;">
+				</div>
+				<div id="yzm" style="display: none;">
+					<label for="validateCode">验证码:</label>
+					<input id="yzmval" type="text" id="validateCode" name="validateCode" maxlength="5" style="font-weight:bold;width:25%;margin-bottom:0;" />
+					<img id="yanzhengma"  style="width:25%;height: 30px;margin-bottom: -10px;" />
+					<a id="kanbuqing">看不清</a>
+				</div>
+			</form>
+			<div align="center" style="margin-top: 3%;">
+				<button id='login' class="mui-btn mui-btn-primary anniu14" data-loading-icon="" data-loading-text="正在登录，请稍后..." style="border:0px;background-color: red;">登 录</button>
+			</div>
+		</div>
+
+		<script src="../js/mui.min.js"></script>
+		<script src="../js/my.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){
+				console.log(plus.storage.getItem('$sessionid'));
+				if (plus.storage.getItem('$sessionid')) {
+					plus.webview.currentWebview().hide();
+					return;
+				} 
+				//	是否需要验证码
+				var isValidate = false;
+				//成功响应的回调函数
+				var success = function(response) {
+					console.log(JSON.stringify(response));
+					if(response.isValidateCodeLogin == true){
+						console.log("========3次登录错误 显示验证码===========");
+						isValidate = true;
+						document.getElementById("yzm").style.display ="block";
+					}
+					mui.toast(response.message);
+					refresh();
+					console.log("response.id ="+response.id+"========response.sessionid =" + response.sessionid);
+					if(response.sessionid){
+						console.log("========登录成功!===========");
+						isValidate = false;
+						document.getElementById("yzm").style.display ="none";
+						document.getElementById("yzmval").value ="";
+						plus.storage.setItem('name', response.name);
+						plus.storage.setItem('loginName', response.loginName);
+						plus.storage.setItem('$id', response.id);
+						plus.storage.setItem('$sessionid', response.sessionid);
+						plus.webview.currentWebview().hide();
+						var self = plus.webview.currentWebview();
+						console.log(self.index);
+//						plus.webview.getLaunchWebview().reload();// 重新加载页面
+						console.log("=========================");
+						if(self.index == 'tab-orglive'){
+							plus.webview.show('tab-orglive.html',"fade-in",300);
+							plus.webview.getWebviewById('tab-orglive.html').reload();
+						}
+						if(self.index == 'tab-edu'){
+							plus.webview.show('tab-edu.html',"fade-in",300);
+							plus.webview.getWebviewById('tab-edu.html').reload();
+						}
+						if(self.index == 'tab-person-main'){
+							plus.webview.show('tab-person-main.html',"fade-in",300);
+							plus.webview.getWebviewById('tab-person-main.html').reload();
+						}
+						if(self.index == 'logout'){
+							plus.webview.show('tab-news.html',"fade-in",300);
+							plus.webview.getWebviewById('tab-news.html').reload();
+						}
+					}
+					mui("#login").button('reset');
+				};
+				//设置全局beforeSend
+				mui.ajaxSettings.beforeSend = function(xhr, setting) {
+					//beforeSend演示,也可在$.ajax({beforeSend:function(){}})中设置单个Ajax的beforeSend
+					console.log('beforeSend:::' + JSON.stringify(setting));
+				};
+				//设置全局complete
+				mui.ajaxSettings.complete = function(xhr, status) {
+					console.log('complete:::' + status);
+					console.log('complete:::' + xhr.status);
+					console.log('complete:::' + xhr.readyState);
+				}
+				var ajax = function() {
+					var un = document.getElementById("username");
+					var pw = document.getElementById("password");
+					var validate = document.getElementById("yzmval");
+					
+					var url = urlpath+'/a/login?_ajax=true';
+					//请求方式，默认为Get；
+					var type = "post";
+					//预期服务器范围的数据类型
+					var dataType = "json";
+					if(isValidate == true){
+						console.log("isValidate == true");
+						console.log("username ="+un.value);
+						var data = {
+							username: un.value,
+							password: pw.value,
+							validateCode:validate.value,
+							rememberMe:'true',
+							mobileLogin: 'true'
+						};
+					}else{
+						console.log("isValidate == false");
+						var data = {
+							username: un.value,
+							password: pw.value,
+							mobileLogin: 'true',
+							rememberMe:'true'
+						};
+					}
+					// url = url + (dataType === 'html' ? 'text' : dataType);
+					mui.post(url, data, success, dataType);
+				};
+				document.getElementById("login").addEventListener('tap', function() {
+					mui("#login").button('loading');
+					ajax();
+				});
+				document.getElementById("kanbuqing").addEventListener('tap', function() {
+					refresh();
+				});
+				document.getElementById("yanzhengma").addEventListener('tap', function() {
+					refresh();
+				});
+				var refresh = function(){
+					document.getElementById("yanzhengma").src = urlpath+"/servlet/validateCodeServlet";
+				};
+			});
+		</script>
+	</body>
+
+</html>

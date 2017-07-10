@@ -1,0 +1,92 @@
+.bg-color {
+	background: red;
+}
+
+.bg-color h1 {
+	color: #fff;
+	font-weight: bold;
+}
+
+.my-ul {
+	background-color: gray;
+	padding-top: 10px;
+}
+
+.my-li {
+	background-color: white;
+	margin: 10px;
+	border-radius: 5px 5px 5px 5px;
+}
+
+
+/***会议进程***/
+
+.wenzd {
+	font-size: 0.8em;
+	color: #555555;
+}
+
+.wenz {
+	font-size: 0.6em;
+	color: #555555;
+}
+
+.lvquan {
+	height: 40px;
+	line-height: 38px;
+	display: block;
+	color: #008000;
+	font-size: 0.5em;
+	border: 2px #008000 solid;
+	border-radius: 50px;
+	width: 40px;
+	text-align: center
+}
+
+.chengse {
+	height: 40px;
+	line-height: 38px;
+	display: block;
+	color: #EC971F;
+	font-size: 0.5em;
+	border: 2px #EC971F solid;
+	border-radius: 50px;
+	width: 40px;
+	text-align: center
+}
+
+.jieshu {
+	height: 40px;
+	line-height: 38px;
+	display: block;
+	color: #ACACB4;
+	font-size: 0.5em;
+	border: 2px #ACACB4 solid;
+	border-radius: 50px;
+	width: 40px;
+	text-align: center
+}
+.baise {
+	margin-top: 2px;
+	height: 40px;
+	line-height: 38px;
+	display: block;
+	color: white;
+	font-size: 0.5em;
+	border: 2px white solid;
+	border-radius: 50px;
+	width: 40px;
+	text-align: center
+}
+.heise {
+	margin-top: 2px;
+	height: 40px;
+	line-height: 38px;
+	display: block;
+	color: black;
+	font-size: 0.5em;
+	border: 2px black solid;
+	border-radius: 50px;
+	width: 40px;
+	text-align: center
+}

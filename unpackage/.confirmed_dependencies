@@ -1,0 +1,98 @@
+{
+	"index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"nav/tab-main.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"nav/tab-one.html"
+		],
+		"refer": [
+			"nav/tab-one.html",
+			"nav/tab-two.html",
+			"nav/tab-four.html",
+			"nav/tab-three.html",
+			"guide/guide.html"
+		]
+	},
+	"guide/guide.html": {
+		"resources": [
+			"js/mui.min.js",
+			"guide/tiyan.png",
+			"guide/bi1.jpg",
+			"guide/logo.png",
+			"guide/yuandian.png",
+			"css/mui.min.css",
+			"guide/guts.png",
+			"guide/bi2.jpg",
+			"guide/bi.jpg"
+		],
+		"refer": []
+	},
+	"nav/tab-one.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"nav/tab-three.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"nav/tab-four.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"nav/main.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"login/login.html"
+		],
+		"refer": [
+			"confsplit/confsplit-main.html",
+			"login/login.html"
+		]
+	},
+	"confsplit/confsplit-main.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"confsplit/confsplit-sub.html",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"confsplit/confsplit-sub.html"
+		]
+	},
+	"confsplit/confsplit-sub.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
+		],
+		"refer": []
+	},
+	"login/login.html": {
+		"resources": [
+			"login/tx.jpg",
+			"fonts/mui.ttf",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	}
+}

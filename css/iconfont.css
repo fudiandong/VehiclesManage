@@ -1,0 +1,19 @@
+
+@font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.ttf?t=1495679615839') format('truetype'); /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:40px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-huiyi:before { content: "\e65d"; }
+
+.icon-huodong:before { content: "\e64d"; }
+
+.icon-dangfei:before { content: "\e668"; }
+

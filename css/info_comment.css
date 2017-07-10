@@ -1,0 +1,52 @@
+﻿.np-reply-box{border:1px solid #ccc;font-size:14px}
+.np-reply-box-content{padding-left:20px;overflow:hidden;border-bottom:1px solid #eee}
+.np-reply-box-content textarea{width:100%;height:40px;margin-left:-20px;padding:10px;font-size:14px;border:0;outline:none;resize:none;float:left;display:inline-block;color:#333}
+.np-reply-box-footer{position:relative;display:block;height:32px;background-color: #fff;}
+.submitBtn{float:right;position:relative;width:102px}
+.np-btn-submit{float:right;margin:4px 10px 0 0;display:inline-block;width:67px;line-height:24px;height:24px;text-align:center;background-color:#379be9;border-radius:2px;color:#fff}
+.np-btn-submit:hover{text-decoration:none;background-color:#328bd2;color:#fff;}
+.np-tip{height:14px;line-height:14px;position:absolute;top:9px;right:90px;width:300px;color:#f00;text-align:right}
+.np-tip a{color:#297acc}
+
+#allComments{font-size:14px}
+.np-post{zoom:1;border-bottom:solid 1px #DDD}
+.np-comment-list .np-post{position:relative;padding-left:40px;vertical-align:top}
+.np-avatar{border-radius:20px;width:40px;height:40px;position:absolute;top:12px;left:0}
+.np-post .np-post .np-avatar{width:35px;height:35px}
+.np-post-body{padding-left:10px}
+.np-post-header{padding-top:10px;line-height:20px}
+.np-post-header span{margin-right:3px}
+.np-user{display:inline-block;color:#297acc}
+.np-btn-upvote,.np-btn-reply{background-image:url(../img/iconbg.png);background-repeat:no-repeat;background-size:100px auto}
+.np-btn-upvote{padding-left:20px;background-position:0 -310px;margin-right:15px}
+.np-btn-reply{padding-left:22px;background-position:0 -333px}
+.np-comment-list .np-post-header span{margin-right:3px}
+.np-post-content{margin-top:6px;font-size:14px;line-height:21px;word-break:break-all}
+.np-post-footer{margin-top:3px;padding-bottom:10px;height:20px;color:#999;text-align:right}
+.np-post-footer a{line-height:20px}
+.np-post-footer .time{float:left;font-size:12px}
+.np-btn{display:inline-block}
+.np-btn:link{color:#999;}
+.np-btn:hover{color:#555;text-decoration:none}
+.np-comment-list .np-post .np-post,.np-notice-list .np-post .np-post{border:none;border-top:1px dotted #CCC;padding-left:35px}
+.children{padding-left:10px}
+.children .np-reply-box-inline {padding-left:0px;margin:0 0 8px 0;overflow:hidden}
+.tipInfo{color:#999;text-align:center;font-size:12px;height:100px;_height:auto;overflow:hidden}
+.waitting{background:url(../img/loadgray.gif) center no-repeat}
+.np-nodata{height:24px;line-height:24px;padding-top:10px}
+
+.c_more{display:block;position:relative;color:#999;text-align:center;margin:5px 0;font-size:16px;height:40px;line-height:40px;}
+.c_more a{display:block;color:#297acc}
+.c_more a::after{content:"";background:url(../img/iconbg.png) no-repeat 0 -206px;background-size:100px auto;display:inline-block;height:10px;width:10px;margin-left:6px;vertical-align:1px;}
+
+
+/*底部评论浮窗*/
+.comment_footbar{position:fixed;height:48px;width:100%;left:0;bottom:0;background-color:#f2f2f4;border-top:1px solid #e5e5e5;font-size:16px;z-index:1}
+.comment_footbar .input_box{position:absolute;left:0px;right:130px;display:block}
+.comment_footbar .input_box .input{height:30px;line-height:30px;border-radius:3px;margin:8px;color:#8d8d8d;border:1px solid #e5e5e5;font-size:14px;padding-left:32px;background:url(../img/iconbg.png) no-repeat -75px 8px;background-size:100px auto;background-color:#fff}
+.comment_footbar a{height:48px;line-height:48px;position:absolute;right:8px;top:0;margin:0;color:#6E6E6E;font-size: 14px}
+.comment_footbar .comment_no{right:70px}
+.comment_footbar .comment_no::before{content:'';display:inline-block;height: 36px;width: 22px;vertical-align: middle;background:url(../img/iconbg.png) no-repeat -81px -234px;background-size:100px auto}
+.comment_footbar .favorite{height:36px;display:block;}
+.comment_footbar .favorite::before{content:'';display:inline-block;height: 36px;width: 22px;vertical-align: middle;background:url(../img/iconbg.png) no-repeat -80px -57px;background-size:100px auto}
+.comment_footbar .fav_ysc::before{background-position:-80px -92px}

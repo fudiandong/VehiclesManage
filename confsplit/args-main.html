@@ -23,7 +23,8 @@
 		mui.plusReady(function() {
 			plus.screen.lockOrientation("landscape-primary");
 			var webview = plus.webview.currentWebview();
-			var id = webview.id;
+			var subid = webview.id;
+			console.log(subid);
 			//启用双击监听
 			mui.init({
 				gestureConfig: {
@@ -31,10 +32,13 @@
 				},
 				subpages: [{
 					url: 'args-sub.html',
-					id: id,
+					id: 'args-sub.html',
 					styles: {
 						top: '45px',
 						bottom: '0px',
+					},
+					extras: {
+						subid: subid
 					}
 				}]
 			});

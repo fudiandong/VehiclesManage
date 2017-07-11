@@ -152,7 +152,6 @@
 						'<span id="issuedDate" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].issuedDate + '</span>' +
 						'<span id="zwpp" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].zwpp + '</span>';
 					li.addEventListener('tap', function() {
-						mui.toast(this.getAttribute("id"));
 						mui.openWindow({
 							id: this.getAttribute("id"),
 							url: 'args-main.html',

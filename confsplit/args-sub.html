@@ -25,14 +25,14 @@
 
 				<ul class="mui-table-view">
 					<li class="mui-table-view-cell" style="width: 100%;">
-						<span id="order" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">参数编号</span>
-						<span id="productNo" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">接口参数名</span>
-						<span id="ANName" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">参数名称</span>
-						<span id="ANModel" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">企业参数编号</span>
-						<span id="entName" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">合格证参数名</span>
-						<span id="ANGroup" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">是否是多值</span>
-						<span id="issuedDate" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">是否是单值</span>
-						<span id="zwpp" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">参数值</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">参数编号</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">接口参数名</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">参数名称</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">企业参数编号</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">合格证参数名</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">是否是多值</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">是否是单值</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">参数值</span>
 						<!--<span id="zwpp" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">公告列表id</span>-->
 					</li>
 
@@ -63,7 +63,7 @@
 				var page = 1;
 				plus.screen.lockOrientation("landscape-primary");
 				var webview = plus.webview.currentWebview();
-				var id = webview.id;
+				var id = webview.subid;
 				console.log(id);
 				mui.init({
 					pullRefresh: {
@@ -150,14 +150,14 @@
 						li.id = data.rDate[i].id
 						li.className = 'mui-table-view-cell';
 						li.innerHTML =
-							'<span id="order" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].anbusnum + '</span>' +
-							'<span id="productNo" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].anintername + '</span>' +
-							'<span id="ANName" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].anprname + '</span>' +
-							'<span id="ANModel" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].cerName + '</span>' +
-							'<span id="entName" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].multipleData + '</span>' +
-							'<span id="ANGroup" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].anprnum + '</span>' +
-							'<span id="issuedDate" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].multipleData + '</span>' +
-							'<span id="zwpp" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].anvalue + '</span>';
+							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].anprname + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].anintername + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].anprnum + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].anbusnum + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].cerName + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].multipleData + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].singleData + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].anvalue + '</span>';
 						fragment.appendChild(li);
 					}
 					return fragment;

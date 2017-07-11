@@ -86,7 +86,9 @@
 			"css/mui.min.css",
 			"fonts/mui.ttf"
 		],
-		"refer": []
+		"refer": [
+			"confsplit/args-main.html"
+		]
 	},
 	"login/login.html": {
 		"resources": [
@@ -108,6 +110,24 @@
 		]
 	},
 	"confsplit/anform-sub.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"confsplit/args-main.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"confsplit/args-sub.html",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"confsplit/args-sub.html"
+		]
+	},
+	"confsplit/args-sub.html": {
 		"resources": [
 			"js/mui.pullToRefresh.js",
 			"js/mui.min.js",

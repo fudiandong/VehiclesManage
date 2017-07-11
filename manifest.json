@@ -283,7 +283,9 @@
 					"css/mui.min.css",
 					"fonts/mui.ttf"
 				],
-				"refer": [],
+				"refer": [
+					"confsplit/args-main.html"
+				],
 				"priority": 0
 			},
 			"login/login.html": {
@@ -307,6 +309,25 @@
 				"priority": 0
 			},
 			"confsplit/anform-sub.html": {
+				"resources": [
+					"js/mui.pullToRefresh.js",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"confsplit/args-main.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"confsplit/args-sub.html",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"confsplit/args-sub.html": {
 				"resources": [
 					"js/mui.pullToRefresh.js",
 					"js/mui.min.js",

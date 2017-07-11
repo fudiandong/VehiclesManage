@@ -14,7 +14,7 @@
 	<body>
 		<header class="mui-bar mui-bar-nav" style="background: red;">
 			<a id="back" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: white;"></a>
-			<h1 id="title" class="mui-title" style="color: white;">公告数据-参数</h1>
+			<h1 id="title" class="mui-title" style="color: white;">公告备案</h1>
 		</header>
 		<div class="mui-content"></div>
 	</body>
@@ -22,17 +22,23 @@
 	<script type="text/javascript">
 		mui.plusReady(function() {
 			plus.screen.lockOrientation("landscape-primary");
+			var webview = plus.webview.currentWebview();
+			var subid = webview.id;
+			console.log(subid);
 			//启用双击监听
 			mui.init({
 				gestureConfig: {
 					doubletap: true
 				},
 				subpages: [{
-					url: 'confsplit-sub.html',
-					id: 'confsplit-sub.html',
+					url: 'beian-sub.html',
+					id: 'beian-sub.html',
 					styles: {
 						top: '45px',
 						bottom: '0px',
+					},
+					extras: {
+						subid: subid
 					}
 				}]
 			});

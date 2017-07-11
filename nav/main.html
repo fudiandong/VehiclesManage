@@ -15,7 +15,8 @@
 		</header>
 
 		<div class="mui-content">
-			<button id="one">公告数据</button>
+			<button id="one">公告数据-参数</button>
+			<button id="beian">公告数据-备案</button>
 			<button id="two">COC信息</button>
 			<button id="three">油耗信息</button>
 			<button id="four">环保信息</button>
@@ -47,10 +48,22 @@
 					}
 				});
 			});
+			document.getElementById("beian").addEventListener('tap', function() {
+				mui.openWindow({
+					id: 'confbeian-main.html',
+					url: '../beian/confbeian-main.html',
+					styles: {
+						popGesture: 'close'
+					},
+					show: {
+						aniShow: 'slide-in-right'
+					}
+				});
+			});
 			document.getElementById("two").addEventListener('tap', function() {
 				mui.openWindow({
-					id: 'anform-main.html',
-					url: '../confsplit/anform-main.html',
+					id: 'coc-main.html',
+					url: '../coc/coc-main.html',
 					styles: {
 						popGesture: 'close'
 					},

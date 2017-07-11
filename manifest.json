@@ -262,7 +262,9 @@
 				],
 				"refer": [
 					"confsplit/confsplit-main.html",
-					"confsplit/anform-main.html"
+					"confsplit/anform-main.html",
+					"coc/coc-main.html",
+					"beian/confbeian-main.html"
 				],
 				"priority": 0
 			},
@@ -328,6 +330,82 @@
 				"priority": 0
 			},
 			"confsplit/args-sub.html": {
+				"resources": [
+					"js/mui.pullToRefresh.js",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"coc/coc-main.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"coc/coc-sub.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"coc/coc-sub.html": {
+				"resources": [
+					"js/mui.pullToRefresh.js",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"coc/coc-args-main.html"
+				],
+				"priority": 0
+			},
+			"coc/coc-args-main.html": {
+				"resources": [
+					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"coc/coc-args-sub.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"coc/coc-args-sub.html": {
+				"resources": [
+					"js/mui.pullToRefresh.js",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"beian/confbeian-main.html": {
+				"resources": [
+					"beian/confbeian-sub.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"beian/confbeian-sub.html": {
+				"resources": [
+					"js/mui.pullToRefresh.js",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"beian/beian-main.html"
+				],
+				"priority": 0
+			},
+			"beian/beian-main.html": {
+				"resources": [
+					"beian/beian-sub.html",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"beian/beian-sub.html": {
 				"resources": [
 					"js/mui.pullToRefresh.js",
 					"js/mui.min.js",

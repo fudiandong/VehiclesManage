@@ -64,7 +64,8 @@
 		],
 		"refer": [
 			"confsplit/confsplit-main.html",
-			"login/login.html"
+			"login/login.html",
+			"confsplit/anform-main.html"
 		]
 	},
 	"confsplit/confsplit-main.html": {
@@ -91,6 +92,24 @@
 		"resources": [
 			"login/tx.jpg",
 			"fonts/mui.ttf",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"confsplit/anform-main.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"confsplit/anform-sub.html",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"confsplit/anform-sub.html"
+		]
+	},
+	"confsplit/anform-sub.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
 			"js/mui.min.js",
 			"css/mui.min.css"
 		]

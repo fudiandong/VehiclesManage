@@ -261,7 +261,8 @@
 					"login/login.html"
 				],
 				"refer": [
-					"confsplit/confsplit-main.html"
+					"confsplit/confsplit-main.html",
+					"confsplit/anform-main.html"
 				],
 				"priority": 0
 			},
@@ -289,6 +290,25 @@
 				"resources": [
 					"login/tx.jpg",
 					"fonts/mui.ttf",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"confsplit/anform-main.html": {
+				"resources": [
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"confsplit/anform-sub.html",
+					"fonts/mui.ttf"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"confsplit/anform-sub.html": {
+				"resources": [
+					"js/mui.pullToRefresh.js",
 					"js/mui.min.js",
 					"css/mui.min.css"
 				],

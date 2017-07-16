@@ -65,7 +65,11 @@
 		"refer": [
 			"confsplit/confsplit-main.html",
 			"login/login.html",
-			"confsplit/anform-main.html"
+			"confsplit/anform-main.html",
+			"qtrip/qtrip-main.html",
+			"coc/coc-main.html",
+			"environmental/env-arglist-main.html",
+			"environmental/env-attachlist-main.html"
 		]
 	},
 	"confsplit/confsplit-main.html": {
@@ -128,6 +132,141 @@
 		]
 	},
 	"confsplit/args-sub.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"qtrip/qtrip-main.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"qtrip/qtrip-sub.html"
+		],
+		"refer": [
+			"qtrip/qtrip-sub.html"
+		]
+	},
+	"qtrip/qtrip-sub.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"qtrip/qtrip-args-main.html"
+		]
+	},
+	"coc/coc-main.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"coc/coc-sub.html"
+		],
+		"refer": [
+			"coc/coc-sub.html"
+		]
+	},
+	"coc/coc-sub.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"qtrip/qtrip-args-main.html": {
+		"resources": [
+			"qtrip/qtrip-args-sub.html"
+		],
+		"refer": [
+			"qtrip/qtrip-args-sub.html"
+		]
+	},
+	"qtrip/qtrip-args-sub.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"environmental/env-arglist-main.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"environmental/env-arglist-sub.html"
+		],
+		"refer": [
+			"environmental/env-arglist-sub.html"
+		]
+	},
+	"environmental/env-arglist-sub.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"environmental/env-args-main.html"
+		]
+	},
+	"environmental/env-attachlist-main.html": {
+		"resources": [
+			"environmental/env-attachlist-sub.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"environmental/env-attachlist-sub.html"
+		]
+	},
+	"environmental/env-attachlist-sub.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
+		],
+		"refer": [
+			"environmental/env-attachargs-main.html"
+		]
+	},
+	"environmental/env-attachargs-main.html": {
+		"resources": [
+			"environmental/env-attachargs-sub.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"environmental/env-attachargs-sub.html"
+		]
+	},
+	"environmental/env-attachargs-sub.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"environmental/env-args-main.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"environmental/env-args-sub.html"
+		],
+		"refer": [
+			"environmental/env-args-sub.html"
+		]
+	},
+	"environmental/env-args-sub.html": {
 		"resources": [
 			"js/mui.pullToRefresh.js",
 			"js/mui.min.js",

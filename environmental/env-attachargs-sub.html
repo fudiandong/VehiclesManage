@@ -13,7 +13,6 @@
 			<div class="mui-scroll">
 				<!--private String enprnum;//参数编号
 				private String enprname;//参数名称
-				private String enbusnum;//企业参数编号
 				private String enname;//对应环保证书参数名
 				private String multipleData;//是否是多值
 				private String singleData;//是否是单值
@@ -21,34 +20,15 @@
 				private String envalue;//参数值-->
 				<ul class="mui-table-view">
 					<li class="mui-table-view-cell" style="width: 100%;">
-						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">参数编号</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">参数编号</span>
 						<!--<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">接口参数名</span>-->
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">参数名称</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">企业参数编号</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">参数名称</span>
+						<!--<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">企业参数编号</span>-->
 						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">对应环保证书参数名</span>
 						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">是否是多值</span>
 						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">是否是单值</span>
 						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">附表标识</span>
 						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">参数值</span>
-						<!--<span id="zwpp" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">公告列表id</span>-->
-					</li>
-
-					<!--<li class="mui-table-view-cell">
-						<span style="float: left;width: 30%;">培训标题</span>
-						<p id="title" style="float: left;"></p>
-					</li>
-					<li class="mui-table-view-divider"></li>
-					<li class="mui-table-view-cell">
-						<span style="float: left;width: 30%;">培训内容</span>
-						<p id="content" style="float: left;"></p>
-					</li>
-					<li class="mui-table-view-divider"></li>
-					<li id="path" class="mui-table-view-cell">
-						<div class="mui-navigate-right">
-							<span style="float: left;width: 30%;">培训视频</span>
-							<p style="float: left;color: green;">点击开始学习</p>
-						</div>
-					</li>-->
 				</ul>
 			</div>
 		</div>
@@ -88,7 +68,7 @@
 					setTimeout(function() {
 						page = 1;
 						//http://114.115.212.225:8080/jeesite/a/BaseDataCheck/Announcement/APPANform?id=f6a88adb5bc547fe98104c5937da7a82&&pageNo=1&&pageSize=3
-						var url = urlpath + '/a/BaseDataCheck/Environment/APPenvironmentform?id=' + id + '&pageNo=' + page + '&pageSize=' + pageSize;
+						var url = urlpath + '/a/BaseDataCheck/Environment/APPenvironmentScheduleform?id=' + id + '&pageNo=' + page + '&pageSize=' + pageSize;
 						console.log(url);
 						mui.getJSON(url, {}, function(data) {
 							console.log(JSON.stringify(data));
@@ -115,7 +95,7 @@
 				 */
 				function pullupRefresh() {
 					setTimeout(function() {
-						var url = urlpath + '/a/BaseDataCheck/Environment/APPenvironmentform?id=' + id + '&pageNo=' + page + '&pageSize=' + pageSize;
+						var url = urlpath + '/a/BaseDataCheck/Environment/APPenvironmentScheduleform?id=' + id + '&pageNo=' + page + '&pageSize=' + pageSize;
 						console.log(url);
 						mui.getJSON(url, {}, function(data) {
 							var ul = document.querySelector('.mui-table-view');
@@ -147,9 +127,8 @@
 						li.id = data.rDate[i].id
 						li.className = 'mui-table-view-cell';
 						li.innerHTML =
-							'<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].enprnum + '</span>' +
-							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].enprname + '</span>' +
-							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].enbusnum + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].enprnum + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">' + data.rDate[i].enprname + '</span>' +
 							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].enname + '</span>' +
 							'<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].multipleData + '</span>' +
 							'<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].singleData + '</span>' +

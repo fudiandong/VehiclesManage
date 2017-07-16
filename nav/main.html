@@ -19,7 +19,8 @@
 			<button id="beian">公告数据-备案</button>
 			<button id="two">COC信息</button>
 			<button id="three">油耗信息</button>
-			<button id="four">环保信息</button>
+			<button id="four">环保信息-参数</button>
+			<button id="five">环保信息-附表</button>
 		</div>
 
 		<script src="../js/mui.min.js"></script>
@@ -85,16 +86,28 @@
 				});
 			});
 			document.getElementById("four").addEventListener('tap', function() {
-//				mui.openWindow({
-//					id: 'confsplit-main.html',
-//					url: '../confsplit/confsplit-main.html',
-//					styles: {
-//						popGesture: 'close'
-//					},
-//					show: {
-//						aniShow: 'slide-in-right'
-//					}
-//				});
+				mui.openWindow({
+					id: 'env-arglist-main.html',
+					url: '../environmental/env-arglist-main.html',
+					styles: {
+						popGesture: 'close'
+					},
+					show: {
+						aniShow: 'slide-in-right'
+					}
+				});
+			});
+			document.getElementById("five").addEventListener('tap', function() {
+				mui.openWindow({
+					id: 'env-attachlist-main.html',
+					url: '../environmental/env-attachlist-main.html',
+					styles: {
+						popGesture: 'close'
+					},
+					show: {
+						aniShow: 'slide-in-right'
+					}
+				});
 			});
 		</script>
 	</body>

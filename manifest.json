@@ -265,7 +265,9 @@
 					"confsplit/anform-main.html",
 					"coc/coc-main.html",
 					"beian/confbeian-main.html",
-					"qtrip/qtrip-main.html"
+					"qtrip/qtrip-main.html",
+					"environmental/env-arglist-main.html",
+					"environmental/env-attachlist-main.html"
 				],
 				"priority": 0
 			},
@@ -447,6 +449,88 @@
 				"priority": 0
 			},
 			"qtrip/qtrip-args-sub.html": {
+				"resources": [
+					"js/mui.pullToRefresh.js",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"environmental/env-arglist-main.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"environmental/env-arglist-sub.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"environmental/env-arglist-sub.html": {
+				"resources": [
+					"js/mui.pullToRefresh.js",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [
+					"environmental/env-args-main.html"
+				],
+				"priority": 0
+			},
+			"environmental/env-attachlist-main.html": {
+				"resources": [
+					"environmental/env-attachlist-sub.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"environmental/env-attachlist-sub.html": {
+				"resources": [
+					"js/mui.pullToRefresh.js",
+					"js/mui.min.js",
+					"css/mui.min.css",
+					"fonts/mui.ttf"
+				],
+				"refer": [
+					"environmental/env-attachargs-main.html"
+				],
+				"priority": 0
+			},
+			"environmental/env-attachargs-main.html": {
+				"resources": [
+					"environmental/env-attachargs-sub.html",
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"environmental/env-attachargs-sub.html": {
+				"resources": [
+					"js/mui.pullToRefresh.js",
+					"js/mui.min.js",
+					"css/mui.min.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"environmental/env-args-main.html": {
+				"resources": [
+					"js/mui.min.js",
+					"fonts/mui.ttf",
+					"css/mui.min.css",
+					"environmental/env-args-sub.html"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"environmental/env-args-sub.html": {
 				"resources": [
 					"js/mui.pullToRefresh.js",
 					"js/mui.min.js",

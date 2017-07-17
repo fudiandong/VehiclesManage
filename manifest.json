@@ -483,7 +483,8 @@
 					"css/mui.min.css"
 				],
 				"refer": [
-					"environmental/env-args-main.html"
+					"environmental/env-args-main.html",
+					"environmental/args-attach.html"
 				],
 				"priority": 0
 			},
@@ -561,7 +562,8 @@
 					"confsplit/confsplit-main.html",
 					"beian/confbeian-main.html",
 					"coc/coc-main.html",
-					"qtrip/qtrip-main.html"
+					"qtrip/qtrip-main.html",
+					"environmental/env-arglist-main.html"
 				],
 				"priority": 0
 			},
@@ -577,6 +579,22 @@
 					"css/iconfont.css",
 					"css/mui.min.css",
 					"css/icons-extra.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"environmental/args-attach.html": {
+				"resources": [
+					"js/mui.pullToRefresh.js",
+					"css/my.css",
+					"js/common.js",
+					"js/mui.min.js",
+					"css/common.css",
+					"js/mui.pullToRefresh.material.js",
+					"js/my.js",
+					"css/iconfont.css",
+					"css/icons-extra.css",
+					"css/mui.min.css"
 				],
 				"refer": [],
 				"priority": 0

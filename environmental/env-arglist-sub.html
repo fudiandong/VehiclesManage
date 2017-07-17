@@ -26,10 +26,11 @@
 
 				<ul class="mui-table-view">
 					<li class="mui-table-view-cell" style="width: 100%;float: left;">
+						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">序号</span>
 						<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">信息公开编号</span>
 						<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">车辆型号</span>
 						<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">发动机型号</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">公开时间</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">公开时间</span>
 					</li>
 				</ul>
 			</div>
@@ -126,14 +127,15 @@
 					li.id = data.rDate[i].id
 					li.className = 'mui-table-view-cell';
 					li.innerHTML =
+						'<span id="order" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + parseInt(pageSize * (page - 1) + i + 1) + '</span>' +
 						'<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">' + data.rDate[i].informationNum + '</span>' +
 						'<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">' + data.rDate[i].veModel + '</span>' +
 						'<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">' + data.rDate[i].engineModel + '</span>' +
-						'<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">' + data.rDate[i].openTime + '</span>';
+						'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].openTime + '</span>';
 					li.addEventListener('tap', function() {
 						mui.openWindow({
 							id: this.getAttribute("id"),
-							url: 'env-args-main.html',
+							url: 'args-attach.html',
 							styles: {
 								popGesture: 'close'
 							},

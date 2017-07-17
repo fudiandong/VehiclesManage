@@ -31,7 +31,7 @@
 						</div>
 						<div style="color: black;text-align: center;">油耗信息</div>
 					</section>
-					<section style="background: white;padding: 2px;padding-bottom: 20px;">
+					<section id="env" style="background: white;padding: 2px;padding-bottom: 20px;">
 						<div class="bl-box" style="background: url(../images/d4.jpg) no-repeat center;background-size: cover;">
 							<!--<h2 class="">4</h2>-->
 						</div>
@@ -84,10 +84,10 @@
 					}
 				});
 			});
-			document.getElementById("om").addEventListener("tap", function() {
+			document.getElementById("env").addEventListener("tap", function() {
 				mui.openWindow({
-					id: 'confsplit-main.html',
-					url: '../confsplit/confsplit-main.html',
+					id: 'env-arglist-main.html',
+					url: '../environmental/env-arglist-main.html',
 					styles: {
 						popGesture: 'close'
 					},

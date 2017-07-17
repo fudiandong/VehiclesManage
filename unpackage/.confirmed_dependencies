@@ -100,7 +100,8 @@
 			"fonts/mui.ttf",
 			"js/mui.min.js",
 			"css/mui.min.css"
-		]
+		],
+		"refer": []
 	},
 	"confsplit/anform-main.html": {
 		"resources": [
@@ -118,7 +119,8 @@
 			"js/mui.pullToRefresh.js",
 			"js/mui.min.js",
 			"css/mui.min.css"
-		]
+		],
+		"refer": []
 	},
 	"confsplit/args-main.html": {
 		"resources": [
@@ -136,7 +138,8 @@
 			"js/mui.pullToRefresh.js",
 			"js/mui.min.js",
 			"css/mui.min.css"
-		]
+		],
+		"refer": []
 	},
 	"qtrip/qtrip-main.html": {
 		"resources": [
@@ -176,7 +179,8 @@
 			"js/mui.pullToRefresh.js",
 			"js/mui.min.js",
 			"css/mui.min.css"
-		]
+		],
+		"refer": []
 	},
 	"qtrip/qtrip-args-main.html": {
 		"resources": [
@@ -191,7 +195,8 @@
 			"js/mui.pullToRefresh.js",
 			"js/mui.min.js",
 			"css/mui.min.css"
-		]
+		],
+		"refer": []
 	},
 	"environmental/env-arglist-main.html": {
 		"resources": [
@@ -253,7 +258,8 @@
 			"js/mui.pullToRefresh.js",
 			"js/mui.min.js",
 			"css/mui.min.css"
-		]
+		],
+		"refer": []
 	},
 	"environmental/env-args-main.html": {
 		"resources": [
@@ -271,6 +277,18 @@
 			"js/mui.pullToRefresh.js",
 			"js/mui.min.js",
 			"css/mui.min.css"
+		],
+		"refer": []
+	},
+	"nav/tab-two.html": {
+		"resources": [
+			"images/d4.jpg",
+			"images/d3.jpg",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"images/d1.jpg",
+			"images/d2.jpg",
+			"nav/component.css"
 		]
 	}
 }

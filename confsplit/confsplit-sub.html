@@ -20,6 +20,12 @@
 				private String ANGroup;//批次
 				private String issuedDate;//发布日期
 				private String zwpp;//中文品牌-->
+				<div class="mui-table-view-cell" style="width: 100%;padding-left: 25px;">
+					车辆型号：<input class="mui-col-sm-3" /><span style="padding-left: 5px;">批次：</span><input class="mui-col-sm-3" />
+					<button type="button" class="mui-btn mui-btn-primary mui-icon mui-icon-search">
+		                                        查询
+		        	</button>
+				</div>
 				<ul class="mui-table-view">
 					<li class="mui-table-view-cell" style="width: 100%;">
 						<span id="order" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">序号</span>
@@ -62,7 +68,7 @@
 				pullRefresh: {
 					container: '#pullrefresh',
 					down: {
-//						auto: true, //可选,默认false.首次加载自动下拉刷新一次
+						//						auto: true, //可选,默认false.首次加载自动下拉刷新一次
 						contentdown: "下拉可以刷新", //可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
 						contentover: "释放立即刷新", //可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
 						contentrefresh: "正在刷新...", //可选，正在刷新状态时，下拉刷新控件上显示的标题内容

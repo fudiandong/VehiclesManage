@@ -18,7 +18,9 @@
 	</head>
 
 	<body style="background-color: white;">
-		<div class="mui-content" style="background-color: white;">
+		
+		<div align="center" style="padding-top: 20%;float: left;"><img src="logo.png" width="30%"></div>
+		<div class="mui-content" style="background-color: white; float: right;width: 70%;">
 			<!--<div align="center" style="padding-top: 20%;"><img src="tx.jpg" width="35%"></div>-->
 			<form id='login-form' style="width: 80%; margin: 0 auto;padding-top: 10%;">
 				<div class="mui-input-row">
@@ -134,9 +136,10 @@
 									plus.webview.show('tab-news.html', "fade-in", 300);
 									plus.webview.getWebviewById('tab-news.html').reload();
 								}
-							}
-							mui("#login").button('reset');
+								mui("#login").button('reset');
 							plus.webview.currentWebview().close();
+							}
+							
 						},
 						error: function(xhr, type, errorThrown) {
 							console.log(type);

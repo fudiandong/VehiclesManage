@@ -300,7 +300,9 @@
 					"login/tx.jpg",
 					"fonts/mui.ttf",
 					"js/mui.min.js",
-					"css/mui.min.css"
+					"css/mui.min.css",
+					"js/my.js",
+					"login/logo.png"
 				],
 				"refer": [],
 				"priority": 0

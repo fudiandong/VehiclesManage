@@ -12,30 +12,30 @@
 	<body>
 		<div class="mui-content">
 			<div class="container">
-				<div id="bl-main" class="bl-main">
-					<section id="om">
-						<div class="bl-box" style="background: url(../images/d1.jpg);background-size: cover;">
-							<h2 class="">1</h2>
+				<div id="bl-main" class="bl-main" style="background: white;">
+					<section id="om" style="background: white;padding: 2px;padding-bottom: 20px;">
+						<div class="bl-box" style="background: url(../images/d1.jpg) no-repeat center;background-size: cover;">
+							<!--<h2 class="">1</h2>-->
 						</div>
-						<!--<span class="bl-icon bl-icon-close"></span>-->
+						<div style="color: black;text-align: center;">公告数据</div>
 					</section>
-					<section id="bl-work-section">
-						<div class="bl-box" style="background: url(../images/d2.jpg);background-size: cover;">
-							<h2 >2</h2>
+					<section id="bl-work-section" style="background: white;padding: 2px;padding-bottom: 20px;">
+						<div class="bl-box" style="background: url(../images/d2.jpg)no-repeat center;background-size: cover;">
+							<!--<h2 >2</h2>-->
 						</div>
-						<span class="bl-icon bl-icon-close"></span>
+						<div style="color: black;text-align: center;">COC信息</div>
 					</section>
-					<section>
-						<div class="bl-box" style="background: url(../images/d3.jpg);background-size: cover;">
-							<h2 class="">3</h2>
+					<section style="background: white;padding: 2px;padding-bottom: 20px;">
+						<div class="bl-box" style="background: url(../images/d3.jpg) no-repeat center;background-size: cover;">
+							<!--<h2 class="">3</h2>-->
 						</div>
-						<span class="bl-icon bl-icon-close"></span>
+						<div style="color: black;text-align: center;">油耗信息</div>
 					</section>
-					<section>
-						<div class="bl-box" style="background: url(../images/d4.jpg);background-size: cover;">
-							<h2 class="">4</h2>
+					<section style="background: white;padding: 2px;padding-bottom: 20px;">
+						<div class="bl-box" style="background: url(../images/d4.jpg) no-repeat center;background-size: cover;">
+							<!--<h2 class="">4</h2>-->
 						</div>
-						<span class="bl-icon bl-icon-close"></span>
+						<div style="color: black;text-align: center;">环保信息</div>
 					</section>
 				</div>
 			</div>
@@ -47,9 +47,57 @@
 			mui.plusReady(function() {
 				plus.screen.lockOrientation("landscape-primary");
 			});
-			document.getElementById("om").addEventListener("click", function() {
-				console.log("333");
+			document.getElementById("om").addEventListener("tap", function() {
+				mui.openWindow({
+					id: 'confsplit-main.html',
+					url: '../confsplit/confsplit-main.html',
+					styles: {
+						popGesture: 'close'
+					},
+					show: {
+						aniShow: 'slide-in-right'
+					}
+				});
 			});
+			document.getElementById("om").addEventListener("tap", function() {
+				mui.openWindow({
+					id: 'confsplit-main.html',
+					url: '../confsplit/confsplit-main.html',
+					styles: {
+						popGesture: 'close'
+					},
+					show: {
+						aniShow: 'slide-in-right'
+					}
+				});
+			});
+			
+			document.getElementById("om").addEventListener("tap", function() {
+				mui.openWindow({
+					id: 'confsplit-main.html',
+					url: '../confsplit/confsplit-main.html',
+					styles: {
+						popGesture: 'close'
+					},
+					show: {
+						aniShow: 'slide-in-right'
+					}
+				});
+			});
+			document.getElementById("om").addEventListener("tap", function() {
+				mui.openWindow({
+					id: 'confsplit-main.html',
+					url: '../confsplit/confsplit-main.html',
+					styles: {
+						popGesture: 'close'
+					},
+					show: {
+						aniShow: 'slide-in-right'
+					}
+				});
+			});
+			
+			
 		</script>
 	</body>
 

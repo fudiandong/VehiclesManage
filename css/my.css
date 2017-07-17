@@ -2,6 +2,11 @@
 	background: red;
 }
 
+/*背景色 红色*/
+.bg-red{
+	background-color: red;
+}
+
 .bg-color h1 {
 	color: #fff;
 	font-weight: bold;

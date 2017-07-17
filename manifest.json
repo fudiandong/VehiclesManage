@@ -211,7 +211,8 @@
 					"nav/tab-two.html",
 					"nav/tab-four.html",
 					"nav/tab-three.html",
-					"guide/guide.html"
+					"guide/guide.html",
+					"login/login.html"
 				],
 				"priority": 0
 			},
@@ -289,7 +290,8 @@
 					"fonts/mui.ttf"
 				],
 				"refer": [
-					"confsplit/args-main.html"
+					"confsplit/args-main.html",
+					"confsplit/args-filing.html"
 				],
 				"priority": 0
 			},
@@ -549,26 +551,39 @@
 					"images/d2.jpg",
 					"nav/component.css"
 				],
+				"refer": [
+					"confsplit/confsplit-main.html",
+					"beian/confbeian-main.html"
+				],
+				"priority": 0
+			},
+			"confsplit/args-filing.html": {
+				"resources": [
+					"js/mui.pullToRefresh.js",
+					"css/my.css",
+					"js/common.js",
+					"js/mui.min.js",
+					"css/common.css",
+					"js/mui.pullToRefresh.material.js",
+					"js/my.js",
+					"css/iconfont.css",
+					"css/mui.min.css",
+					"css/icons-extra.css"
+				],
 				"refer": [],
 				"priority": 0
 			}
 		},
 		"idle": {
 			"resources": [
-				"css/icons-extra.css",
 				"fonts/mui-icons-extra.ttf",
-				"js/common.js",
 				"images/logo.png",
-				"css/common.css",
 				"images/pdf.png",
-				"css/iconfont.css",
 				"js/mui.js",
 				"js/mui.view.js",
 				"images/shipin.png",
-				"js/mui.pullToRefresh.material.js",
 				"css/mui.css",
 				"js/immersed.js",
-				"css/my.css",
 				"images/tx.jpg",
 				"css/mui.min2.css",
 				"css/info_comment.css",

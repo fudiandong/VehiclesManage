@@ -357,7 +357,8 @@
 				"resources": [
 					"js/mui.pullToRefresh.js",
 					"js/mui.min.js",
-					"css/mui.min.css"
+					"css/mui.min.css",
+					"fonts/mui.ttf"
 				],
 				"refer": [
 					"coc/coc-args-main.html"
@@ -378,7 +379,8 @@
 				"resources": [
 					"js/mui.pullToRefresh.js",
 					"js/mui.min.js",
-					"css/mui.min.css"
+					"css/mui.min.css",
+					"fonts/mui.ttf"
 				],
 				"refer": [],
 				"priority": 0
@@ -553,7 +555,8 @@
 				],
 				"refer": [
 					"confsplit/confsplit-main.html",
-					"beian/confbeian-main.html"
+					"beian/confbeian-main.html",
+					"coc/coc-main.html"
 				],
 				"priority": 0
 			},

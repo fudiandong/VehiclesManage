@@ -25,15 +25,10 @@
 
 				<ul class="mui-table-view">
 					<li class="mui-table-view-cell" style="width: 100%;">
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">参数编号</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">接口参数名</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">参数名称</span>
-						<!--<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">企业参数编号</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">合格证参数名</span>-->
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">是否是多值</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">是否是单值</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">参数值</span>
-						<!--<span id="zwpp" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">公告列表id</span>-->
+						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">序号</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">参数编号</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-4 mui-ellipsis">参数名</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-4 mui-ellipsis">参数值</span>
 					</li>
 
 					<!--<li class="mui-table-view-cell">
@@ -58,7 +53,6 @@
 		<script src="../js/mui.min.js"></script>
 		<script src="../js/mui.pullToRefresh.js"></script>
 		<script type="text/javascript">
-			
 			mui.plusReady(function() {
 				var page = 1;
 				plus.screen.lockOrientation("landscape-primary");
@@ -69,7 +63,7 @@
 					pullRefresh: {
 						container: '#pullrefresh',
 						down: {
-//							auto: true, //可选,默认false.首次加载自动下拉刷新一次
+							//							auto: true, //可选,默认false.首次加载自动下拉刷新一次
 							contentdown: "下拉可以刷新", //可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
 							contentover: "释放立即刷新", //可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
 							contentrefresh: "正在刷新...", //可选，正在刷新状态时，下拉刷新控件上显示的标题内容
@@ -151,12 +145,10 @@
 						li.id = data.rDate[i].id
 						li.className = 'mui-table-view-cell';
 						li.innerHTML =
-							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].cocprnum + '</span>' +
-							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].cocintername + '</span>' +
-							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].cocprname + '</span>' +
-							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].multipleData + '</span>' +
-							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].singleData + '</span>' +
-							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].cocprvalue + '</span>';
+							'<span id="order" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + parseInt(pageSize * (page - 1) + i + 1) + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">' + data.rDate[i].cocprnum + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-4 mui-ellipsis">' + data.rDate[i].cocprname + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-4 mui-ellipsis">' + data.rDate[i].cocprvalue + '</span>';
 						fragment.appendChild(li);
 					}
 					return fragment;

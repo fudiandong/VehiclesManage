@@ -180,9 +180,12 @@
 		"resources": [
 			"js/mui.pullToRefresh.js",
 			"js/mui.min.js",
-			"css/mui.min.css"
+			"css/mui.min.css",
+			"fonts/mui.ttf"
 		],
-		"refer": []
+		"refer": [
+			"coc/coc-args-main.html"
+		]
 	},
 	"qtrip/qtrip-args-main.html": {
 		"resources": [
@@ -294,7 +297,8 @@
 		],
 		"refer": [
 			"confsplit/confsplit-main.html",
-			"beian/confbeian-main.html"
+			"beian/confbeian-main.html",
+			"coc/coc-main.html"
 		]
 	},
 	"beian/confbeian-main.html": {
@@ -327,6 +331,25 @@
 			"css/iconfont.css",
 			"css/mui.min.css",
 			"css/icons-extra.css"
+		]
+	},
+	"coc/coc-args-main.html": {
+		"resources": [
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"coc/coc-args-sub.html"
+		],
+		"refer": [
+			"coc/coc-args-sub.html"
+		]
+	},
+	"coc/coc-args-sub.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"fonts/mui.ttf"
 		]
 	}
 }

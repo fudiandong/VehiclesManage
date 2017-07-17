@@ -22,10 +22,11 @@
 				private String zwpp;//中文品牌-->
 				<ul class="mui-table-view">
 					<li class="mui-table-view-cell" style="width: 100%;">
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">车型系列</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">单元</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">序号</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">车型序列</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">单元</span>
 						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">车型名称</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">COC编号</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">COC编号</span>
 						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">COC类型</span>
 						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">车辆类别</span>
 						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">生效日期</span>
@@ -142,12 +143,13 @@
 					li.id = data.rDate[i].id
 					li.className = 'mui-table-view-cell';
 					li.innerHTML =
-						'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].carTypeSeq + '</span>' +
+						'<span id="order" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + parseInt(pageSize * (page - 1) + i + 1) + '</span>' +
+						'<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].carTypeSeq + '</span>' +
 						'<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].carCell + '</span>' +
-						'<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].carType + '</span>' +
+						'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].carType + '</span>' +
 						'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].cocCode + '</span>' +
-						'<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].cocType + '</span>' +
-						'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].autoType + '</span>' +
+						'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].cocType + '</span>' +
+						'<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + data.rDate[i].autoType + '</span>' +
 						'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].cocEffectiveDate + '</span>';
 					li.addEventListener('tap', function() {
 						mui.openWindow({

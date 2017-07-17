@@ -18,7 +18,8 @@
 			"nav/tab-two.html",
 			"nav/tab-four.html",
 			"nav/tab-three.html",
-			"guide/guide.html"
+			"guide/guide.html",
+			"login/login.html"
 		]
 	},
 	"guide/guide.html": {
@@ -91,7 +92,8 @@
 			"fonts/mui.ttf"
 		],
 		"refer": [
-			"confsplit/args-main.html"
+			"confsplit/args-main.html",
+			"confsplit/args-filing.html"
 		]
 	},
 	"login/login.html": {
@@ -289,6 +291,42 @@
 			"images/d1.jpg",
 			"images/d2.jpg",
 			"nav/component.css"
+		],
+		"refer": [
+			"confsplit/confsplit-main.html",
+			"beian/confbeian-main.html"
+		]
+	},
+	"beian/confbeian-main.html": {
+		"resources": [
+			"fonts/mui.ttf",
+			"beian/confbeian-sub.html",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		],
+		"refer": [
+			"beian/confbeian-sub.html"
+		]
+	},
+	"beian/confbeian-sub.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
+			"js/mui.min.js",
+			"css/mui.min.css"
+		]
+	},
+	"confsplit/args-filing.html": {
+		"resources": [
+			"js/mui.pullToRefresh.js",
+			"css/my.css",
+			"js/common.js",
+			"js/mui.min.js",
+			"css/common.css",
+			"js/mui.pullToRefresh.material.js",
+			"js/my.js",
+			"css/iconfont.css",
+			"css/mui.min.css",
+			"css/icons-extra.css"
 		]
 	}
 }

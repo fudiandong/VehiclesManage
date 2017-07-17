@@ -18,15 +18,10 @@
 				private String fuvalue;//参数值-->
 				<ul class="mui-table-view">
 					<li class="mui-table-view-cell" style="width: 100%;">
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">参数编号</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">接口参数名</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">参数名称</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">企业参数编号</span>
-						<!--<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">合格证参数名</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">是否是多值</span>
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">是否是单值</span>-->
-						<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">参数值</span>
-						<!--<span id="zwpp" style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">公告列表id</span>-->
+						<span style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">序号</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">参数编号</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-4 mui-ellipsis">参数名</span>
+						<span style="float: left;text-align: center;" class="mui-col-sm-4 mui-ellipsis">参数值</span>
 					</li>
 
 					<!--<li class="mui-table-view-cell">
@@ -144,11 +139,10 @@
 						li.id = data.rDate[i].id
 						li.className = 'mui-table-view-cell';
 						li.innerHTML =
-							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].fuprnum + '</span>' +
-							'<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">' + data.rDate[i].fuprname + '</span>' +
-							'<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">' + data.rDate[i].funame + '</span>' +
-							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].fuvalue + '</span>' +
-							'<span style="float: left;text-align: center;" class="mui-col-sm-2 mui-ellipsis">' + data.rDate[i].fuvalue + '</span>';
+							'<span id="order" style="float: left;text-align: center;" class="mui-col-sm-1 mui-ellipsis">' + parseInt(pageSize * (page - 1) + i + 1) + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-3 mui-ellipsis">' + data.rDate[i].fuprnum + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-4 mui-ellipsis">' + data.rDate[i].funame + '</span>' +
+							'<span style="float: left;text-align: center;" class="mui-col-sm-4 mui-ellipsis">' + data.rDate[i].fuvalue + '</span>';
 						fragment.appendChild(li);
 					}
 					return fragment;

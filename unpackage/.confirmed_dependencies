@@ -189,7 +189,10 @@
 	},
 	"qtrip/qtrip-args-main.html": {
 		"resources": [
-			"qtrip/qtrip-args-sub.html"
+			"qtrip/qtrip-args-sub.html",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css"
 		],
 		"refer": [
 			"qtrip/qtrip-args-sub.html"
@@ -199,7 +202,8 @@
 		"resources": [
 			"js/mui.pullToRefresh.js",
 			"js/mui.min.js",
-			"css/mui.min.css"
+			"css/mui.min.css",
+			"fonts/mui.ttf"
 		],
 		"refer": []
 	},
@@ -298,7 +302,8 @@
 		"refer": [
 			"confsplit/confsplit-main.html",
 			"beian/confbeian-main.html",
-			"coc/coc-main.html"
+			"coc/coc-main.html",
+			"qtrip/qtrip-main.html"
 		]
 	},
 	"beian/confbeian-main.html": {

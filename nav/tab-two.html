@@ -6,23 +6,50 @@
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="component.css" rel="stylesheet" />
 	</head>
 
 	<body>
-		<header class="mui-bar mui-bar-nav">
-		    <!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
-		    <h1 class="mui-title">数据查询</h1>
-		</header>
 		<div class="mui-content">
-		    数据查询
+			<div class="container">
+				<div id="bl-main" class="bl-main">
+					<section id="om">
+						<div class="bl-box" style="background: url(../images/d1.jpg);background-size: cover;">
+							<h2 class="">1</h2>
+						</div>
+						<!--<span class="bl-icon bl-icon-close"></span>-->
+					</section>
+					<section id="bl-work-section">
+						<div class="bl-box" style="background: url(../images/d2.jpg);background-size: cover;">
+							<h2 >2</h2>
+						</div>
+						<span class="bl-icon bl-icon-close"></span>
+					</section>
+					<section>
+						<div class="bl-box" style="background: url(../images/d3.jpg);background-size: cover;">
+							<h2 class="">3</h2>
+						</div>
+						<span class="bl-icon bl-icon-close"></span>
+					</section>
+					<section>
+						<div class="bl-box" style="background: url(../images/d4.jpg);background-size: cover;">
+							<h2 class="">4</h2>
+						</div>
+						<span class="bl-icon bl-icon-close"></span>
+					</section>
+				</div>
+			</div>
+			<!-- /container -->
 		</div>
-		
-		
-		
-		
 		<script src="../js/mui.min.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			mui.init();
+			mui.plusReady(function() {
+				plus.screen.lockOrientation("landscape-primary");
+			});
+			document.getElementById("om").addEventListener("click", function() {
+				console.log("333");
+			});
 		</script>
 	</body>
 
